@@ -1,0 +1,9 @@
+1st line from mumbai
+Takes a filename in the workspace and runs it as Groovy source text.
+The loaded file can contain statements at top level or just load and run a closure. For example:
+
+    def pipeline
+    node('agent') {
+        pipeline = load 'pipeline.groovy'
+        pipeline.functionA()
+    }
