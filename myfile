@@ -7,3 +7,16 @@ The loaded file can contain statements at top level or just load and run a closu
         pipeline = load 'pipeline.groovy'
         pipeline.functionA()
     }
+
+
+=================================================================================================================================
+
+2nd line from mumbai
+Takes a map from branch names to closures and an optional argument failFast which will terminate all branches upon a failure in any other branch:
+
+    parallel firstBranch: {
+        // do something
+    }, secondBranch: {
+        // do something else
+    },
+    failFast: true|false
